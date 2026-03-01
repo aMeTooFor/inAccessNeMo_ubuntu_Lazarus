@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="inAccessNeMo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="48"/>
+      </Unit>
+      <Unit>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="inAccessNeMo_frm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="inAccessNeMo_Main"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1435"/>
+        <CursorPos X="37" Y="1443"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="piaPublic.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="7"/>
+        <UsageCount Value="47"/>
+      </Unit>
+      <Unit>
+        <Filename Value="msgshow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="showMSG"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="32"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="616"/>
+        <CursorPos X="38" Y="631"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="4"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/zlib/src/zlib.pp"/>
+        <UnitName Value="ZLib"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="75" Y="67"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/paszlib/src/zstream.pp"/>
+        <UnitName Value="ZStream"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
+        <CursorPos X="20" Y="34"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/customimage.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos Y="46"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="937"/>
+        <CursorPos X="14" Y="950"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/x11/src/xlib.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="751"/>
+        <CursorPos X="63" Y="1044"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1175"/>
+        <CursorPos X="3" Y="1188"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/inc/ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="135"/>
+        <CursorPos X="10" Y="148"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/sysutils/sysencodingh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="24" Y="107"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="106"/>
+        <CursorPos Y="121"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="480"/>
+        <CursorPos X="3" Y="493"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/scrollingwincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="341"/>
+        <CursorPos X="3" Y="343"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/customcontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="3" Y="24"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6138"/>
+        <CursorPos Y="6143"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/control.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="5133"/>
+        <CursorPos X="45" Y="5148"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/compon.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="318"/>
+        <CursorPos X="3" Y="321"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/writer.inc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="1277"/>
+        <CursorPos X="3" Y="1288"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/reader.inc"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="1468"/>
+        <CursorPos X="94" Y="1481"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/typinfo.pp"/>
+        <UnitName Value="TypInfo"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="780"/>
+        <CursorPos X="11" Y="792"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3210"/>
+        <CursorPos Y="3223"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lclclasses.pp"/>
+        <UnitName Value="LCLClasses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="32"/>
+        <CursorPos X="3" Y="45"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/inc/objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="201"/>
+        <CursorPos X="8" Y="201"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <UnitName Value="LResources"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="2713"/>
+        <CursorPos X="13" Y="2725"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/examples/componentstreaming/mainunit.pas"/>
+        <ComponentName Value="CompStreamDemoForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="129"/>
+        <CursorPos X="34" Y="142"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/include/application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2293"/>
+        <CursorPos Y="2305"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/4.4.0/components/jitclasses/test/testjitclass.pas"/>
+        <UnitName Value="TestJitClass"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2278"/>
+        <CursorPos X="47" Y="2287"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/rtl-objpas/src/inc/rtti.pp"/>
+        <UnitName Value="Rtti"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="3654"/>
+        <CursorPos X="58" Y="3664"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="reader.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1483"/>
+        <CursorPos X="51" Y="1509"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/streams.inc"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="218"/>
+        <CursorPos X="55" Y="229"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1694" Column="7" TopLine="1676"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Caret Line="4533" Column="3" TopLine="4533"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Caret Line="4648" Column="62" TopLine="4644"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Caret Line="289" Column="15" TopLine="278"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Caret Line="256" Column="15" TopLine="245"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Caret Line="4499" Column="3" TopLine="4499"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/classesh.inc"/>
+        <Caret Line="954" Column="15" TopLine="941"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/writer.inc"/>
+        <Caret Line="488" Column="3" TopLine="486"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/classesh.inc"/>
+        <Caret Line="1587" Column="22" TopLine="1569"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/writer.inc"/>
+        <Caret Line="613" Column="3" TopLine="611"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/classesh.inc"/>
+        <Caret Line="1604" Column="15" TopLine="1592"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/writer.inc"/>
+        <Caret Line="1288" Column="3" TopLine="1277"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/classesh.inc"/>
+        <Caret Line="1480" Column="30" TopLine="1467"/>
+      </Position>
+      <Position>
+        <Filename Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Caret Line="2725" Column="13" TopLine="2713"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1709" TopLine="1686"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1704" Column="31" TopLine="1686"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1707" TopLine="1686"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1708" Column="80" TopLine="1690"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1730" Column="5" TopLine="1705"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1750" Column="30" TopLine="1727"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1769" Column="5" TopLine="1744"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1731" Column="10" TopLine="1726"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1736" TopLine="1724"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1726" TopLine="1712"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1769" Column="48" TopLine="1748"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1733" Column="41" TopLine="1722"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1738" TopLine="1722"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1739" TopLine="1722"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1740" TopLine="1722"/>
+      </Position>
+      <Position>
+        <Filename Value="inaccessnemo_main.pas"/>
+        <Caret Line="1735" TopLine="1722"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Line Value="949"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Line Value="2611"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Line Value="3030"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Line Value="3058"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Line Value="3065"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/lazarus/4.4.0/lcl/lresources.pp"/>
+        <Line Value="3071"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/reader.inc"/>
+        <Line Value="613"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="reader.inc"/>
+        <Line Value="1479"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/classes/reader.inc"/>
+        <Line Value="1479"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,547 @@
+object inAccessNeMo_frm: TinAccessNeMo_frm
+  Left = 209
+  Height = 707
+  Top = 183
+  Width = 928
+  Caption = 'inAccessNeMo_frm'
+  ClientHeight = 707
+  ClientWidth = 928
+  KeyPreview = True
+  LCLVersion = '4.4.0.0'
+  Visible = True
+  WindowState = wsMaximized
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  OnKeyUp = FormKeyUp
+  OnResize = FormResize
+  OnShow = FormShow
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 707
+    Top = 0
+    Width = 771
+    HorzScrollBar.Page = 497
+    VertScrollBar.Page = 515
+    Align = alClient
+    ClientHeight = 705
+    ClientWidth = 769
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    OnMouseUp = ScrollBox1MouseUp
+    object Panel11: TPanel
+      Left = 0
+      Height = 705
+      Top = 0
+      Width = 769
+      Align = alClient
+      ClientHeight = 705
+      ClientWidth = 769
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnMouseMove = Panel11MouseMove
+      OnMouseUp = Panel11MouseUp
+      object Panel12: TImage
+        Left = 1
+        Height = 703
+        Top = 1
+        Width = 767
+        Align = alClient
+        AutoSize = True
+        StretchOutEnabled = False
+        StretchInEnabled = False
+        OnMouseMove = Panel12MouseMove
+      end
+      object Image1: TImage
+        Left = 406
+        Height = 90
+        Top = 424
+        Width = 90
+        ParentShowHint = False
+        StretchOutEnabled = False
+        StretchInEnabled = False
+        Visible = False
+      end
+      object Memo1: TMemo
+        Left = 96
+        Height = 90
+        Top = 150
+        Width = 150
+        Lines.Strings = (
+          '说明文件：【每个按钮可以用右键单击来查看帮助说明】'
+          '打开平面地图图片--【也可以在右键中打开】@平面的必是近似的，实际上地球的球面距离不是小软件可以解决的。@地图的最大尺寸是长与宽都是3000的像素：3000*3000，以像素为单位的。@坐标与【距离】，全是以像素为单位的。@坐标是屏幕坐标，原点在左上角，X轴向右，Y轴向下(不是向上)'
+          '点击这按钮后，到地图上开始用鼠标左键再点一下，然后移动鼠标来画曲线海岸线，或用右键来点下再移动后再双击来画折线。@由于无法得到地图上的海岸线，所以需要用户自已沿着地图图片为鼠标移动来记录保存，这样来得到近似的海岸线@左键与右键的作用不一样，且开关设置'
+          '停止描绘海岸线，否则开关标志一直是描绘状态'
+          '载入事前已保存的海岸线数据'
+          '保存已描绘的海岸线数据'
+          '点击来获得坐标，这是先点这个按钮，打开标志开关，@然后点击地图上一个点，则记录下来坐标X，Y在上面的框格内，@这时，再以这为圆心来画圆，半径自设变动大小求距离'
+          '以点为圆心半径为R来画圆，坐标与【距离】，全是以像素为单位的。'
+          '离岸距离为L的区域染色，坐标与【距离】，全是以像素为单位的。'
+          '演示MP4'
+          '说明'
+          '重新载入当前图片并刷新，去掉红色的画圆，只留下蓝色的点'
+          '显示当前是处于左键还是处于右键的状态'
+          '叠加式载入：在当前海岸线数据上再加上新载入的'
+          '覆盖式载入：清除在当前海岸线数据后再加上新载入的'
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        ScrollBars = ssBoth
+        TabOrder = 0
+        Visible = False
+      end
+      object Memo_SaveToTxT: TMemo
+        Left = 97
+        Height = 90
+        Top = 291
+        Width = 150
+        Lines.Strings = (
+          '平面【难抵极/尼莫点】近似计算小软件  Version 1.0  ametoofor@qq.com  作者：三界火宅人-阿莫伽-amogha-vairocana  2021/05/01'
+          ''
+          '说明文件：【每个按钮可以用右键单击来查看帮助说明】'
+          '①打开平面地图图片--【也可以在右键中打开】@平面的必是近似的，实际上地球的球面距离不是小软件可以解决的。'
+          '地图的最大尺寸是长与宽都是3000的像素：3000*3000，以像素为单位的。'
+          '坐标与【距离】，全是以像素为单位的。'
+          '坐标是屏幕坐标，原点在左上角，X轴向右，Y轴向下(不是向上)'
+          '②点击这按钮后，到地图上开始用鼠标左键再点一下，然后移动鼠标来画曲线海岸线，或用右键来点下再移动后再双击来画折线。@由于无法得到地图上的海岸线，所以需要用户自已沿着地图图片为鼠标移动来记录保存，这样来得到近似的海岸线@左键与右键的作用不一样，且开关设置'
+          '③停止描绘海岸线，否则开关标志一直是描绘状态'
+          '④载入事前已保存的海岸线数据'
+          '⑤保存已描绘的海岸线数据'
+          '⑥点击来获得坐标，这是先点这个按钮，打开标志开关，@然后点击地图上一个点，则记录下来坐标X，Y在上面的框格内，@这时，再以这为圆心来画圆，半径自设变动大小求距离'
+          '⑦以点为圆心半径为R来画圆，坐标与【距离】，全是以像素为单位的。'
+          '离岸距离为L的区域染色，坐标与【距离】，全是以像素为单位的。'
+          '演示MP4'
+          '说明'
+          '重新载入当前图片并刷新，去掉红色的画圆，只留下蓝色的点'
+          '显示当前是处于左键还是处于右键的状态'
+          '叠加式载入：在当前海岸线数据上再加上新载入的'
+          '覆盖式载入：清除在当前海岸线数据后再加上新载入的'
+          ''
+          ''
+          '   网上看到宇航员飞船回地球的网上文章时，找个太平洋的尼莫点来降落，于是百度查找，看了【难抵极/尼莫点】的相关知识，于是要，想找下有没有相关软件来看下，结果一时找不到一星半点，于是，自已开始冥想构思，作为小软件来用下，由于是小软件，只能是【近似计算】的。'
+          '   【由于没有任何别的软件来参考，一切全凭我的想像来开发的】。'
+          ''
+          '   先载入一张南极地图（网上下载的，别的地图自已另行下载）'
+          '地图的最大尺寸是长与宽都是3000的像素：3000*3000，以像素为单位的。'
+          '坐标与【距离】，全是以像素为单位的。坐标是屏幕坐标，原点在左上角，X轴向右，Y轴向下(不是向上)'
+          '   点击描绘海岸线，描绘南极地图，这时，发现，海岸线是以实际大陆还是以永久冰川还是以季节性的冰川，搞不清，是尝试玩下的，不作太多要求，描绘下来，就设离岸距离为L=30试下，太小，再试成100，再试，仍太小，于是试到170，175，180，于是接近南极难抵极。'
+          '   发现，与网上下载的标明的有误差，也不知是不是平面还是海岸线的原因，实际我的小软件求出来的结果是，“难抵极”的抵字的扌的顶上的最顶点的位置。'
+          '   于是，点击这个点的坐标，刷新下，以这个点为圆心来画圆，设圆半径为175试看下效果如何。'
+          '   别的地图一样这样的玩法'
+          ''
+          '【算法说明】：'
+          '就是以点为圆心来画圆'
+          '先描绘海岸线，然后以海岸线上的每点来画圆，就是这样的最简单算法'
+          '验证结果也是这样，以难抵极为圆心来画圆来验证结果的。'
+          ''
+          '时间仓促，不完善之处，敬请原谅'
+          '由于没有任何别的软件来参考，一切全凭我的想像来开发的。'
+          '我也不懂这方面的专业术语如何来描述，只是按照画圆的最简算法来开发出来自娱自乐下，然后分享给需要这方面的人，免费但不开源。'
+          ''
+          '作者还有别的相关的小软件，全在作者个人网站上，全部免费下载使用：'
+          'http://www.okmyok.com/Lisoft.htm'
+          '例如最短路径算法小软件，TSP算法小软件等等多个小软件，如若需要或了解，敬请到我个人网站下载或百度查找后另行自已下载。'
+          ''
+          ''
+          '    平面【难抵极/尼莫点】近似计算小软件  Version 1.0  '
+          '                             ametoofor@qq.com  '
+          '                        作者：三界火宅人-阿莫伽-amogha-vairocana  '
+          '                                                      2021/05/03                                   '
+          '              '
+          ''
+          ''
+        )
+        ScrollBars = ssBoth
+        TabOrder = 1
+        Visible = False
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 771
+    Height = 707
+    Top = 0
+    Width = 157
+    Align = alRight
+    ClientHeight = 707
+    ClientWidth = 157
+    TabOrder = 1
+    object Button1: TButton
+      Left = 4
+      Height = 25
+      Hint = '打开平面地图图片--【也可以在右键中打开】'
+      Top = 3
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '载入地图'
+      TabOrder = 0
+      OnClick = Button1Click
+      OnMouseUp = Button1MouseUp
+    end
+    object Button2: TButton
+      Left = 4
+      Height = 25
+      Top = 28
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '重载刷新'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 3
+      Height = 25
+      Top = 53
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '描绘海岸线'
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnClick = Button3Click
+    end
+    object Panel2: TPanel
+      Left = 127
+      Height = 705
+      Top = 1
+      Width = 29
+      Align = alRight
+      ClientHeight = 705
+      ClientWidth = 29
+      TabOrder = 3
+      object Label1: TLabel
+        Left = 8
+        Height = 360
+        Top = 28
+        Width = 13
+        Caption = '每'#10'个'#10'按'#10'钮'#10'可'#10'以'#10'用'#10'右'#10'键'#10'单'#10'击'#10'来'#10'查'#10'看'#10'帮'#10'助'#10'说'#10'明'
+        Font.Color = clRed
+        Font.Height = -13
+        Font.Name = 'Sans'
+        Font.Style = [fsBold]
+        ParentFont = False
+        WordWrap = True
+      end
+    end
+    object Button4: TButton
+      Left = 6
+      Height = 25
+      Top = 103
+      Width = 117
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '停止描绘'
+      TabOrder = 4
+      Visible = False
+      OnClick = Button4Click
+    end
+    object RadioButton1: TRadioButton
+      Left = 13
+      Height = 23
+      Top = 126
+      Width = 86
+      Caption = '叠加式载入'
+      Font.Color = clMaroon
+      Font.Height = -12
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 5
+    end
+    object RadioButton2: TRadioButton
+      Left = 13
+      Height = 23
+      Top = 151
+      Width = 86
+      Caption = '覆盖式载入'
+      Checked = True
+      Font.Color = clMaroon
+      Font.Height = -12
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 6
+      TabStop = True
+    end
+    object Button5: TButton
+      Left = 8
+      Height = 25
+      Top = 176
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '载入海岸线'
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 7
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Left = 8
+      Height = 25
+      Top = 201
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '保存海岸线'
+      Font.Height = -12
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 8
+      OnClick = Button6Click
+    end
+    object Label4: TLabel
+      Left = 13
+      Height = 20
+      Top = 332
+      Width = 21
+      Caption = 'X：'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 12
+      Height = 20
+      Top = 361
+      Width = 21
+      Caption = 'Y：'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Button7: TButton
+      Left = 9
+      Height = 25
+      Top = 390
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '获取点坐标'
+      Font.Height = -12
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 9
+      OnClick = Button7Click
+    end
+    object Label6: TLabel
+      Left = 16
+      Height = 23
+      Top = 415
+      Width = 90
+      Caption = '设置圆半径：'
+    end
+    object Label7: TLabel
+      Left = 17
+      Height = 20
+      Top = 444
+      Width = 21
+      AutoSize = False
+      Caption = 'R：'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Button8: TButton
+      Left = 7
+      Height = 25
+      Top = 471
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '以点画圆'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 10
+      OnClick = Button8Click
+    end
+    object Label8: TLabel
+      Left = 14
+      Height = 23
+      Top = 230
+      Width = 105
+      Caption = '设置离岸距离：'
+    end
+    object Label9: TLabel
+      Left = 15
+      Height = 20
+      Top = 267
+      Width = 21
+      AutoSize = False
+      Caption = 'L：'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Button10: TButton
+      Left = 9
+      Height = 25
+      Top = 526
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '说明'
+      Font.Color = clFuchsia
+      ParentFont = False
+      TabOrder = 11
+      OnClick = Button10Click
+    end
+    object Button11: TButton
+      Left = 9
+      Height = 25
+      Top = 295
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '离岸染色'
+      Font.Color = clBlue
+      Font.Height = -13
+      Font.Name = 'Sans'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 12
+      OnClick = Button11Click
+    end
+    object Button12: TButton
+      Left = 9
+      Height = 25
+      Top = 500
+      Width = 120
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '演示MP4'
+      Font.Color = clRed
+      ParentFont = False
+      TabOrder = 13
+      OnClick = Button12Click
+    end
+    object SpinEdit1: TSpinEdit
+      Left = 48
+      Height = 31
+      Top = 329
+      Width = 82
+      Font.Height = -9
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 14
+    end
+    object SpinEdit2: TSpinEdit
+      Left = 47
+      Height = 31
+      Top = 359
+      Width = 82
+      Font.Height = -9
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 15
+    end
+    object SpinEdit3: TSpinEdit
+      Left = 49
+      Height = 31
+      Top = 440
+      Width = 82
+      Font.Height = -9
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 16
+      Value = 5
+    end
+    object SpinEdit4: TSpinEdit
+      Left = 47
+      Height = 31
+      Top = 261
+      Width = 82
+      Font.Height = -9
+      Font.Name = 'Sans'
+      ParentFont = False
+      TabOrder = 17
+      Value = 10
+    end
+    object Button_left: TButton
+      Left = 5
+      Height = 25
+      Hint = '打开平面地图图片--【也可以在右键中打开】'
+      Top = 78
+      Width = 38
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '左键'
+      TabOrder = 18
+      Visible = False
+      OnClick = Button_leftClick
+      OnMouseUp = Button1MouseUp
+    end
+    object Button_right: TButton
+      Left = 83
+      Height = 25
+      Hint = '打开平面地图图片--【也可以在右键中打开】'
+      Top = 78
+      Width = 38
+      Anchors = [akTop, akLeft, akRight]
+      Caption = '右键'
+      TabOrder = 19
+      Visible = False
+      OnClick = Button_rightClick
+      OnMouseUp = Button1MouseUp
+    end
+    object Edit1: TEdit
+      Left = 12
+      Height = 40
+      Top = 620
+      Width = 127
+      TabOrder = 20
+      Text = '#28436'
+      Visible = False
+      OnClick = Edit1Click
+    end
+    object Label2: TLabel
+      Left = 17
+      Height = 23
+      Top = 666
+      Width = 60
+      Caption = '演示MP4'
+      Visible = False
+      OnClick = Label2Click
+    end
+    object Label3: TLabel
+      Left = 19
+      Height = 18
+      Top = 592
+      Width = 41
+      Caption = 'label3'
+      Visible = False
+      OnClick = Label2Click
+    end
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 340
+    Top = 71
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '.*.sea'
+    Filter = '*.sea|*.sea'
+    Left = 443
+    Top = 175
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.*.sea'
+    Filter = '*.sea|*.sea'
+    Left = 486
+    Top = 89
+  end
+  object PopupMenu11: TPopupMenu
+    Left = 321
+    Top = 287
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 189
+    Top = 353
+  end
+end
